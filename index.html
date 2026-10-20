@@ -4,7 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#090909">
-<meta name="description" content="ARX Stories — real mysteries, unexplained cases and original horror fiction. Enter the unknown.">
+<meta property="og:title" content="ARX Stories — Enter the Unknown">
+<meta property="og:description" content="Real paranormal cases, nightmare fuel and conspiracy theories. Enter the unknown.">
+<link rel="icon" type="image/png" href="mascot.png">
+<meta name="description" content="ARX Stories — real paranormal cases, nightmare fuel and conspiracy theories. Enter the unknown.">
 <title>ARX Stories — Enter the Unknown</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +17,14 @@
 <body>
 <header class="site-header">
   <a class="brand" href="#" data-home aria-label="ARX Stories home">
-    <span class="brand-mark">ARX</span>
-    <span><b>ARX STORIES</b><small>ENTER THE UNKNOWN</small></span>
+    <img class="brand-logo" src="mascot.png" alt="ARX mascot" width="48" height="48">
+    <span class="brand-copy"><b>ARX <i>STORIES</i></b><small>ENTER THE UNKNOWN</small></span>
   </a>
   <nav class="nav-links" aria-label="Main navigation">
-    <button data-home>Home</button><button data-filter="Real Mysteries">Mysteries</button>
-    <button data-filter="Horror">Horror</button><button data-filter="ARX Originals">Originals</button>
+    <button data-home>Home</button><button data-filter="Real Paranormal Cases">Paranormal</button>
+    <button data-filter="Nightmare Fuel">Nightmare Fuel</button><button data-filter="Conspiracy Theories">Conspiracies</button>
   </nav>
-  <button class="search-jump" id="searchJump" aria-label="Go to search">⌕ <span>Search</span></button>
+  <button class="search-jump" id="searchJump" aria-label="Go to search"><span class="search-icon" aria-hidden="true">⌕</span><span>Search</span></button>
 </header>
 
 <main id="home">
@@ -29,9 +32,9 @@
     <div class="hero-copy">
       <div class="eyebrow">◉ &nbsp; STORIES BEYOND THE ORDINARY</div>
       <h1>Some truths<br>are stranger<br>than <em>fiction.</em></h1>
-      <p>Enter a world of unexplained cases, unsettling encounters and mysteries that refuse to stay buried. Read the stories. Examine the clues. Decide what you believe.</p>
-      <div class="hero-actions"><button class="btn btn-red" id="explore">EXPLORE STORIES ↗</button><button class="btn btn-dark" data-filter="ARX Originals">ARX ORIGINALS</button></div>
-      <div class="hero-stats"><span>01 &nbsp; REAL CASES</span><span>02 &nbsp; UNEXPLAINED</span><span>03 &nbsp; FICTION</span></div>
+      <p>Explore real paranormal cases, nightmare fuel and conspiracy theories. Examine the clues, question the claims and decide what you believe.</p>
+      <div class="hero-actions"><button class="btn btn-red" id="explore">EXPLORE STORIES ↗</button><button class="btn btn-dark" data-filter="Nightmare Fuel">NIGHTMARE FUEL</button></div>
+      <div class="hero-stats"><span>01 &nbsp; PARANORMAL</span><span>02 &nbsp; NIGHTMARE FUEL</span><span>03 &nbsp; CONSPIRACIES</span></div>
     </div>
     <div class="hero-art" role="img" aria-label="Original dark mystery artwork">
       <div class="moon"></div><div class="silhouette"></div><div class="mask"></div><div class="eyes"><i></i><i></i></div><div class="slash"></div>
@@ -44,16 +47,15 @@
       <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search stories, cases, mysteries…" aria-label="Search stories"></label>
     </div>
     <div class="filters" id="filters">
-      <button class="filter active" data-cat="All">All stories</button>
-      <button class="filter" data-cat="Real Mysteries">Real mysteries</button>
-      <button class="filter" data-cat="Unexplained">Unexplained cases</button>
-      <button class="filter" data-cat="Horror">Horror</button>
-      <button class="filter" data-cat="ARX Originals">ARX originals</button>
+      <button class="filter active" data-cat="All">All sections</button>
+      <button class="filter" data-cat="Real Paranormal Cases">Real Paranormal Cases</button>
+      <button class="filter" data-cat="Nightmare Fuel">Nightmare Fuel</button>
+      <button class="filter" data-cat="Conspiracy Theories">Conspiracy Theories</button>
     </div>
     <div class="story-grid" id="cards" aria-live="polite"></div>
   </section>
 
-  <section class="feature-banner shell"><div><div class="eyebrow">THE ARX EXPERIENCE</div><h2>Read what the camera can't show.</h2><p>Long-form stories, timelines, unsettling details and original fiction — made for curious minds and late-night readers.</p></div><button class="btn btn-red" data-filter="All">BROWSE ALL STORIES ↗</button></section>
+  <section class="feature-banner shell"><div><div class="eyebrow">THE ARX EXPERIENCE</div><h2>Read what the camera can't show.</h2><p>Real paranormal case files, nightmare-inducing stories and conspiracy theories — added only when approved by ARX.</p></div><button class="btn btn-red" data-filter="All">BROWSE ALL STORIES ↗</button></section>
 </main>
 
 <main class="shell reader" id="reader" hidden>
@@ -61,7 +63,7 @@
   <article class="article" id="article"></article>
 </main>
 
-<footer><div class="shell footer-row"><span><b>ARX STORIES</b> &nbsp; · &nbsp; MYSTERIES. HORROR. THE UNKNOWN.</span><span>Independent storytelling · Facts separated from speculation.</span></div></footer>
+<footer><div class="shell footer-row"><span class="footer-brand"><img src="mascot.png" alt="ARX mascot" width="26" height="26"><span><b>ARX STORIES</b><small> PARANORMAL. NIGHTMARES. CONSPIRACIES.</small></span></span><span>Independent storytelling · Facts separated from speculation.</span></div></footer>
 <script src="stories.js"></script>
 <script src="app.js"></script>
 </body>

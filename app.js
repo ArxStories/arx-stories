@@ -11,7 +11,7 @@ function draw() {
  <article class="story" tabindex="0" role="button" aria-label="Read ${esc(s.title)}" data-story="${s.id}">
   <div class="cover"><img loading="lazy" src="${esc(s.image)}" alt="" onerror="this.style.display='none'"><span class="tag">${esc(s.category.toUpperCase())}</span></div>
   <div class="story-body"><div class="meta"><span>${esc(s.label)}</span><span>${esc(s.readingTime)}</span></div><h3>${esc(s.title)}</h3><p>${esc(s.description)}</p><span class="read-link">READ STORY <span>↗</span></span></div>
- </article>`).join("") : `<div class="empty">No stories found. Try another search or category.</div>`;
+ </article>`).join("") : `<div class="empty">This section is waiting for its first story. Stories will appear here when you add and approve them.</div>`;
 }
 function setCategory(cat) {
  active = cat;

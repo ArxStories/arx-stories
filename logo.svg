@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">ARX masked mascot</title><desc id="desc">A brown folded paper bag mask with narrow dark eyes and a crimson slash on a black and red circular background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ef3440"/><stop offset="1" stop-color="#74151d"/></linearGradient>
+    <linearGradient id="bag" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6b4b3f"/><stop offset=".48" stop-color="#352521"/><stop offset="1" stop-color="#171212"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <circle cx="64" cy="64" r="62" fill="#090909" stroke="#292929" stroke-width="3"/>
+  <circle cx="64" cy="64" r="54" fill="url(#bg)"/>
+  <path d="M33 28 48 20 81 21 96 36 101 81 87 105 63 112 39 101 27 79Z" fill="#080808" opacity=".6"/>
+  <path d="M39 28 49 23 81 24 92 37 96 78 84 99 64 107 43 98 32 78Z" fill="url(#bag)" stroke="#120e0d" stroke-width="2"/>
+  <path d="M49 23 48 36 79 36 81 24" fill="#8b6250" opacity=".65"/>
+  <path d="M33 43 47 36 43 98 32 78Z" fill="#17100f" opacity=".6"/>
+  <path d="M44 58 57 57 57 62 44 63Z M72 56 85 55 85 60 72 61Z" fill="#050505"/>
+  <path d="M77 42 61 91" stroke="#ff2437" stroke-width="6" stroke-linecap="square" filter="url(#glow)"/>
+  <path d="M40 97 64 107 84 99" fill="none" stroke="#100b0a" stroke-width="2"/>
+</svg>
