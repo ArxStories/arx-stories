@@ -1,70 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090909">
-<meta property="og:title" content="ARX Stories — Enter the Unknown">
-<meta property="og:description" content="Real paranormal cases, nightmare fuel and conspiracy theories. Enter the unknown.">
-<link rel="icon" type="image/png" href="mascot.png">
-<meta name="description" content="ARX Stories — real paranormal cases, nightmare fuel and conspiracy theories. Enter the unknown.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#09090b"><meta name="description" content="ARX Stories — enter the unknown. Real paranormal cases, nightmare fuel and conspiracy theories.">
 <title>ARX Stories — Enter the Unknown</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="#" data-home aria-label="ARX Stories home">
-    <img class="brand-logo" src="mascot.png" alt="ARX mascot" width="48" height="48">
-    <span class="brand-copy"><b>ARX <i>STORIES</i></b><small>ENTER THE UNKNOWN</small></span>
-  </a>
-  <nav class="nav-links" aria-label="Main navigation">
-    <button data-home>Home</button><button data-filter="Real Paranormal Cases">Paranormal</button>
-    <button data-filter="Nightmare Fuel">Nightmare Fuel</button><button data-filter="Conspiracy Theories">Conspiracies</button>
-  </nav>
-  <button class="search-jump" id="searchJump" aria-label="Go to search"><span class="search-icon" aria-hidden="true">⌕</span><span>Search</span></button>
+<div class="grain"></div>
+<header class="topbar">
+  <a class="brand" href="#" id="brandHome" aria-label="ARX Stories home"><img src="mascot.png" alt="ARX paper-bag mascot"><span><b>ARX <em>STORIES</em></b><small>ENTER THE UNKNOWN</small></span></a>
+  <nav><a href="#collection">Explore</a><a href="#categories">Categories</a><a href="#about">About</a></nav>
+  <div class="head-actions"><button class="icon-btn" id="bookmarkNav" title="Saved stories" aria-label="Saved stories">♡ <span class="desktop-only">Saved</span></button><button class="btn btn-outline" id="accountBtn">Log in</button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
 </header>
-
-<main id="home">
-  <section class="hero shell">
-    <div class="hero-copy">
-      <div class="eyebrow">◉ &nbsp; STORIES BEYOND THE ORDINARY</div>
-      <h1>Some truths<br>are stranger<br>than <em>fiction.</em></h1>
-      <p>Explore real paranormal cases, nightmare fuel and conspiracy theories. Examine the clues, question the claims and decide what you believe.</p>
-      <div class="hero-actions"><button class="btn btn-red" id="explore">EXPLORE STORIES ↗</button><button class="btn btn-dark" data-filter="Nightmare Fuel">NIGHTMARE FUEL</button></div>
-      <div class="hero-stats"><span>01 &nbsp; PARANORMAL</span><span>02 &nbsp; NIGHTMARE FUEL</span><span>03 &nbsp; CONSPIRACIES</span></div>
-    </div>
-    <div class="hero-art" role="img" aria-label="Original dark mystery artwork">
-      <div class="moon"></div><div class="silhouette"></div><div class="mask"></div><div class="eyes"><i></i><i></i></div><div class="slash"></div>
-      <div class="art-label"><b>ARX / 001</b> &nbsp; THE UNKNOWN IS CALLING</div>
-    </div>
-  </section>
-
-  <section class="collection shell" id="collection">
-    <div class="section-head"><div><div class="eyebrow">THE COLLECTION</div><h2>Enter the unknown.</h2></div>
-      <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search stories, cases, mysteries…" aria-label="Search stories"></label>
-    </div>
-    <div class="filters" id="filters">
-      <button class="filter active" data-cat="All">All sections</button>
-      <button class="filter" data-cat="Real Paranormal Cases">Real Paranormal Cases</button>
-      <button class="filter" data-cat="Nightmare Fuel">Nightmare Fuel</button>
-      <button class="filter" data-cat="Conspiracy Theories">Conspiracy Theories</button>
-    </div>
-    <div class="story-grid" id="cards" aria-live="polite"></div>
-  </section>
-
-  <section class="feature-banner shell"><div><div class="eyebrow">THE ARX EXPERIENCE</div><h2>Read what the camera can't show.</h2><p>Real paranormal case files, nightmare-inducing stories and conspiracy theories — added only when approved by ARX.</p></div><button class="btn btn-red" data-filter="All">BROWSE ALL STORIES ↗</button></section>
+<main>
+<section class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> THE ARX ARCHIVE · OPEN YOUR EYES</div>
+  <h1>Some truths are<br>stranger than <span>fiction.</span></h1>
+  <p class="hero-desc">Real paranormal cases. Unsettling stories. Theories that challenge what we think we know. Follow the evidence — then decide what you believe.</p>
+  <div class="hero-actions"><a href="#collection" class="btn btn-red">Explore the archive <span>↗</span></a><button class="btn btn-glass" id="featuredBtn">Enter the unknown <span>→</span></button></div>
+  <div class="hero-stats"><div><b>01</b><span>REAL PARANORMAL</span></div><div><b>02</b><span>NIGHTMARE FUEL</span></div><div><b>03</b><span>CONSPIRACIES</span></div></div></div>
+  <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-glow"></div><img src="mascot.png" alt="ARX paper-bag masked mascot"><div class="art-stamp"><span>ARX / 001</span><i>THE UNKNOWN IS CALLING</i></div><div class="art-side">ARCHIVE // CLASSIFIED</div></div>
+</section>
+<section class="ticker" aria-label="Site motto"><div>QUESTION EVERYTHING <b>✳</b> FOLLOW THE CLUES <b>✳</b> STAY CURIOUS <b>✳</b> QUESTION EVERYTHING <b>✳</b> FOLLOW THE CLUES <b>✳</b></div></section>
+<section class="section categories" id="categories"><div class="section-heading"><div><div class="eyebrow">CHOOSE YOUR RABBIT HOLE</div><h2>Three ways into<br><span>the unknown.</span></h2></div><p>Each file opens a door. Not every door leads to an answer.</p></div>
+<div class="category-grid">
+<button class="category-card paranormal" data-category="Real Paranormal Cases"><span class="cat-no">01 / CASE FILES</span><span class="cat-icon">◉</span><h3>Real Paranormal<br>Cases</h3><p>Witness accounts, strange events and the evidence left behind.</p><span class="cat-link">VIEW CASES ↗</span></button>
+<button class="category-card nightmare" data-category="Nightmare Fuel"><span class="cat-no">02 / AFTER DARK</span><span class="cat-icon">✳</span><h3>Nightmare<br>Fuel</h3><p>Fiction, unsettling encounters and stories for the sleepless.</p><span class="cat-link">ENTER THE DARK ↗</span></button>
+<button class="category-card conspiracy" data-category="Conspiracy Theories"><span class="cat-no">03 / RED THREAD</span><span class="cat-icon">⌘</span><h3>Conspiracy<br>Theories</h3><p>Question the narrative. Separate documented facts from speculation.</p><span class="cat-link">FOLLOW THE THREAD ↗</span></button>
+</div></section>
+<section class="section collection" id="collection"><div class="section-heading"><div><div class="eyebrow">THE COLLECTION</div><h2>Enter the <span>archive.</span></h2></div><span class="count" id="storyCount">FILES LOADING</span></div>
+<div class="tools"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search cases, stories, clues..." autocomplete="off"></label><div class="filters" id="filters"><button class="filter active" data-category="All">All files</button><button class="filter" data-category="Real Paranormal Cases">Paranormal</button><button class="filter" data-category="Nightmare Fuel">Nightmare Fuel</button><button class="filter" data-category="Conspiracy Theories">Conspiracies</button></div></div>
+<div class="story-grid" id="storyGrid"><div class="loading">Opening the archive…</div></div>
+</section>
+<section class="join-banner"><div class="join-mark">ARX<span>✳</span></div><div><div class="eyebrow">YOUR OWN LITTLE ARCHIVE</div><h2>Keep the stories<br>that stay with you.</h2><p>Create a free account to save stories and pick up where you left off.</p></div><button class="btn btn-red" id="joinBtn">Create free account ↗</button></section>
+<section class="section about" id="about"><div class="eyebrow">ABOUT ARX STORIES</div><h2>Curiosity is the<br><span>only way out.</span></h2><p>ARX Stories is an independent archive for strange cases, horror storytelling and theories worth examining. Real-world cases are presented with care; allegations and speculation are labelled as such. Fiction is always identified as fiction.</p></section>
 </main>
+<footer><a class="brand footer-brand" href="#"><img src="mascot.png" alt=""><span><b>ARX <em>STORIES</em></b><small>ENTER THE UNKNOWN</small></span></a><span>© <span id="year"></span> ARX STORIES · KEEP QUESTIONING.</span><a href="#about">About the archive ↑</a></footer>
 
-<main class="shell reader" id="reader" hidden>
-  <button class="back-btn" id="back">← BACK TO ALL STORIES</button>
-  <article class="article" id="article"></article>
-</main>
-
-<footer><div class="shell footer-row"><span class="footer-brand"><img src="mascot.png" alt="ARX mascot" width="26" height="26"><span><b>ARX STORIES</b><small> PARANORMAL. NIGHTMARES. CONSPIRACIES.</small></span></span><span>Independent storytelling · Facts separated from speculation.</span></div></footer>
-<script src="stories.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<div class="modal-backdrop" id="authModal" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle"><button class="modal-close" data-close aria-label="Close">×</button><div class="eyebrow">JOIN THE ARCHIVE</div><h2 id="authTitle">Your next rabbit hole<br>starts here.</h2><p class="muted" id="authHint">Create a free account to save stories across visits.</p><form id="authForm"><label>Email address<input type="email" id="authEmail" required autocomplete="email" placeholder="you@example.com"></label><label>Password<input type="password" id="authPassword" required minlength="6" autocomplete="current-password" placeholder="At least 6 characters"></label><button class="btn btn-red full" id="authSubmit">Create account</button></form><p class="switch-auth"><span id="switchText">Already have an account?</span> <button id="switchAuth">Log in</button></p><p class="form-message" id="authMessage" role="status"></p></section></div>
+<div class="modal-backdrop" id="profileModal" hidden><section class="modal" role="dialog" aria-modal="true"><button class="modal-close" data-close aria-label="Close">×</button><div class="eyebrow">MEMBER DOSSIER</div><h2 id="profileTitle">Your archive.</h2><p class="muted" id="profileEmail"></p><div class="profile-stats"><div><b id="savedCount">0</b><span>SAVED FILES</span></div><div><b>FREE</b><span>MEMBERSHIP</span></div></div><button class="btn btn-outline full" id="profileSaved">View saved stories</button><button class="btn btn-red full" id="logoutBtn">Log out</button></section></div>
+<div class="reader-backdrop" id="reader" hidden><article class="reader"><button class="reader-close" id="readerClose">← BACK TO ARCHIVE</button><div id="readerContent"></div></article></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
+</body></html>
