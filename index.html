@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="ARX Stories — real mysteries, unexplained cases and original horror fiction. Enter the unknown.">
+<title>ARX Stories — Enter the Unknown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#" data-home aria-label="ARX Stories home">
+    <span class="brand-mark">ARX</span>
+    <span><b>ARX STORIES</b><small>ENTER THE UNKNOWN</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <button data-home>Home</button><button data-filter="Real Mysteries">Mysteries</button>
+    <button data-filter="Horror">Horror</button><button data-filter="ARX Originals">Originals</button>
+  </nav>
+  <button class="search-jump" id="searchJump" aria-label="Go to search">⌕ <span>Search</span></button>
+</header>
+
+<main id="home">
+  <section class="hero shell">
+    <div class="hero-copy">
+      <div class="eyebrow">◉ &nbsp; STORIES BEYOND THE ORDINARY</div>
+      <h1>Some truths<br>are stranger<br>than <em>fiction.</em></h1>
+      <p>Enter a world of unexplained cases, unsettling encounters and mysteries that refuse to stay buried. Read the stories. Examine the clues. Decide what you believe.</p>
+      <div class="hero-actions"><button class="btn btn-red" id="explore">EXPLORE STORIES ↗</button><button class="btn btn-dark" data-filter="ARX Originals">ARX ORIGINALS</button></div>
+      <div class="hero-stats"><span>01 &nbsp; REAL CASES</span><span>02 &nbsp; UNEXPLAINED</span><span>03 &nbsp; FICTION</span></div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Original dark mystery artwork">
+      <div class="moon"></div><div class="silhouette"></div><div class="mask"></div><div class="eyes"><i></i><i></i></div><div class="slash"></div>
+      <div class="art-label"><b>ARX / 001</b> &nbsp; THE UNKNOWN IS CALLING</div>
+    </div>
+  </section>
+
+  <section class="collection shell" id="collection">
+    <div class="section-head"><div><div class="eyebrow">THE COLLECTION</div><h2>Enter the unknown.</h2></div>
+      <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search stories, cases, mysteries…" aria-label="Search stories"></label>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-cat="All">All stories</button>
+      <button class="filter" data-cat="Real Mysteries">Real mysteries</button>
+      <button class="filter" data-cat="Unexplained">Unexplained cases</button>
+      <button class="filter" data-cat="Horror">Horror</button>
+      <button class="filter" data-cat="ARX Originals">ARX originals</button>
+    </div>
+    <div class="story-grid" id="cards" aria-live="polite"></div>
+  </section>
+
+  <section class="feature-banner shell"><div><div class="eyebrow">THE ARX EXPERIENCE</div><h2>Read what the camera can't show.</h2><p>Long-form stories, timelines, unsettling details and original fiction — made for curious minds and late-night readers.</p></div><button class="btn btn-red" data-filter="All">BROWSE ALL STORIES ↗</button></section>
+</main>
+
+<main class="shell reader" id="reader" hidden>
+  <button class="back-btn" id="back">← BACK TO ALL STORIES</button>
+  <article class="article" id="article"></article>
+</main>
+
+<footer><div class="shell footer-row"><span><b>ARX STORIES</b> &nbsp; · &nbsp; MYSTERIES. HORROR. THE UNKNOWN.</span><span>Independent storytelling · Facts separated from speculation.</span></div></footer>
+<script src="stories.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
